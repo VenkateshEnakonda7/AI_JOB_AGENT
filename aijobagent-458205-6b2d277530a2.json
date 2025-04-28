@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "aijobagent-458205",
+  "private_key_id": "6b2d277530a2f004553b6bd376f1d22c1ea6b80b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDaZySyOm4WAsvj\n3INGcwx5ryPhhBsttV/Kml3U/fRIAcvn5QSq13SaDiFNLrKbXdqtiFuh02VCF9LH\nbv095X2BzsmESTV+2Jqohm6ZT584JScKxZXjAYgxLHQ99QOY1SNUAdkRahxbvZAs\nYMkPpwCNt1krFF3BZwJ+WHgYhX+yE3ZSyMjZnlnKzbI5lyu/2NLQAl3U2QL3brg8\nHRfK5AIdlxviPaI6y32UmAex0MmkyZR/W7aNs2SUpf94YxnNUQTBgY6uPTWQL8te\nWMDBfLkOLERzTBZOGRPq2vhNaFhHTNlngAkz4EWZUlQMXhrlB3zDMa6KWs4jI8rV\nN9MHat+ZAgMBAAECggEABC9UuLPaqxvA2/QCqz48kEjXnjElnN+6tXAovKvxXjjz\n/XSp/RsnIgwQnb3EZzdHGUsX3jJFwI+72dcx0+Z46NyFSAs0ksjtye1wgvBiz6s5\n+l1JanA1M6PQMuWfqbIpoAKWJ5Zx5mnSMHpNMMcqQSzqfbZnt2Z4E2M/CUSml9GG\ng9r/vILyf8mRhIITllP/yjb8iix1wogklNnr1eroNoT9wc37PqNIoz4ODSIheYJA\nUyiICKT20MsrXtGRdBZrdwIHaLLoK5NFJhv/+BLp3vKaxKYuyijCBVgudAOagUuN\nht7ywQ8mdy0A6nRSzXe1CdPYaZeQH3vcgCZTICl/MQKBgQD+VB/pN/KqWX8IPFiz\npTa4iSR2LpPWZQ5sU+M628LcWqM5b+JY8NgRe88zdP674TRR02MVxt2xmcTfaG0+\n8JRb3NrPsgLSmV/w8J8mm7eTxsmq3BAOvYenAY9Hl7t26V+id7Pis2vn3S6q78gd\n91LDYtfmcwIM23mLlTLMuOrikQKBgQDb1pQKeawCYqv5Vzkea7h3oX3fGHdtsimE\nYdOuicsGx6VJZqmeclrYMT+9pbwU0dKF7X67jvPboLNgaaE1YROyTPjQ3j9bWTn3\neO6vpQbqmy5T1wWCjIRSSCfOfofCS0mK5qtw/CUE/sgf+DRZRJabovb1UyX9wp12\nlxj7ds2giQKBgD6bbOOXbzg6IchgOqG2iPryX7RsEN6VL/DA0c4abSSbd1TbUwf7\n+eSL6tzK7y5G6P8/n0OsGcTvioRIi6QTyyG2A3Nfacx4DyMbyMHTUWSiaeCSna1T\nQMJ+4suH8ZD7MByphPHIo0aHr0ZLEqM1z/zjJyzGoPmTSZ9v0fqNhtzRAoGASzMB\nfPvV3RMHpMkzXraWaUWymufxonJ5RTF5iZDVBEKyxYL6rpqLfLyMA0F4Lt7/VpTA\n70OdIxm7glVfsbS9WhZ+XmRH4+WHsKGLdEXNMd9XX5KD7f5HHSZVh4s8wTejtoHl\nT0bRGv5UUqtCrO6LXj3GoHCK5Fz4JCLXht1CxZECgYEA8pMe62zJBKQsdkLwZHXd\ncZgb/Z3A2O+hjVuSWgWjUBWT/lMI86oQ78eXHGNBbw0iBKJsKhJMPRacdMc924wk\nhu7XvhYIsL3xrINlC5w7DqD68Z+en27ZYrqTnSEkd5C9UYOR6EX3tGeXSfanelc1\n2eplQrb50OwgUrvmB9mW/fM=\n-----END PRIVATE KEY-----\n",
+  "client_email": "agentjob@aijobagent-458205.iam.gserviceaccount.com",
+  "client_id": "114954847631207912158",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/agentjob%40aijobagent-458205.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

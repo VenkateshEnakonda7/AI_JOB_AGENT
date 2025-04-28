@@ -1,0 +1,12 @@
+selenium
+beautifulsoup4
+openai
+gspread
+oauth2client
+pandas
+requests
+numpy
+beautifulsoup4
+chromedrivermanager
+webdriver-manager
+openrouter
