@@ -10,3 +10,7 @@ beautifulsoup4
 chromedrivermanager
 webdriver-manager
 openrouter
+gspread
+google-auth
+python-docx
+docx2pdf

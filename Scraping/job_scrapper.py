@@ -1,12 +1,14 @@
 import time
 import re
 from datetime import datetime, timedelta
+from selenium.webdriver.support.ui import Select
 from bs4 import BeautifulSoup
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from utils.logger import log
+from services.gpt_resume_modifier import generate_resumes_from_sheet
 
 
 
@@ -29,12 +31,18 @@ def scrape_naukri_jobs(driver, sheet):
     search_box = WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.XPATH, "//*[@id='root']/div/div[3]/div[2]/div[1]/div/div/div[2]/div/div/div/input"))
     )
-    search_box.send_keys("Automation Testing")
+    search_box.send_keys("Automation Testing,API Testing,API Automation Testing")
+    time.sleep(2)
+    dropdown_element = driver.find_element("id", "experienceDD")  # or By.NAME, By.XPATH, etc.
+    dropdown_element.click()
+    exp= driver.find_element(By.XPATH, "//*[@id='sa-dd-scrollexperienceDD']/div[1]/ul/li[4]")
+    exp.click()
+    time.sleep(2)
     search_box.send_keys(Keys.RETURN)
     time.sleep(5)
 
     n = 0
-    while n <= 10:
+    while n < 1:
         log(f"Scraping page {n}...")
         page_source = driver.page_source
         soup = BeautifulSoup(page_source, 'html.parser')
@@ -68,8 +76,9 @@ def scrape_naukri_jobs(driver, sheet):
 
             try:
                 job_description = WebDriverWait(driver, 10).until(
-                    EC.presence_of_element_located((By.XPATH, "//*[@id='root']/div/main/div[1]/div[1]/section[2]/div[3]"))
+                    EC.presence_of_element_located((By.CLASS_NAME, "styles_JDC__dang-inner-html__h0K4t"))
                 ).text.strip()
+                resume = generate_resumes_from_sheet(job_description)
             except Exception:
                 job_description = "No description available"
 
@@ -77,7 +86,7 @@ def scrape_naukri_jobs(driver, sheet):
             driver.switch_to.window(driver.window_handles[0])
 
             # Save to sheet
-            sheet.append_row([title, company, experience, salary, location, posted_date_str, link, job_description])
+            sheet.append_row([title, company, experience, salary, location, posted_date_str, link, job_description,resume])
             log(f"✅ Inserted: {title} - {company}")
 
         try:
